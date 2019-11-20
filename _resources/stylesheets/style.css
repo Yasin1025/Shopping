@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'muli';
+	src: url('../webfonts/muli-regular.ttf');	
+}
+
+@font-face {
+	font-family: 'berk';
+	src: url('../webfonts/BerkshireSwash-Regular.ttf');	
+}
+
+#text1
+{
+	font-family: muli;
+}
+
+#text2
+{
+	font-family: berk;
+}
+
+.content
+{
+	min-height:700px;
+}
+
+.h-header
+{
+	background:lightblue;
+	height:60px;
+	font-size:30px;
+	text-align:center;
+}
+.footer
+{
+	height:50px;
+	text-align:center;
+	font-size:20px;
+	background:gray;
+}
+.h-home
+{
+	background-color: lightyellow;
+}
+.f-form
+{
+	background-color: lightblue;
+}
+.l-login
+{
+	background-color: lightblue;
+}
