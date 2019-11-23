@@ -14,6 +14,7 @@ class Auth extends CI_Controller {
 		}
 		$data['title']='Profile';
 		$this->load->model('User');
+
 		// catch id from session, and put into a variable
 		$user_id = $this->session->userdata('id');
 		//pass id as a parameter on retrive function, as you only need one user's information
