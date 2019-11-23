@@ -16,9 +16,10 @@ class User extends CI_Model
 		$sql = $this->db->get('auth');
 		return $sql->result();
 	}
-	public function retrive()
+	public function retrive($id)
 	{
-		$this->db->where('username','email','contact','address','photo');
+		// you forgot the syntax, check query builder on codeigniter docs
+		$this->db->where('id', $id);
 		$sql = $this->db->get('auth');
 		return $sql->result();
 	}
