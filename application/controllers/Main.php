@@ -119,7 +119,9 @@ class Main extends CI_Controller {
 							'email'=> $this->input->post('new_email'),
 							'contact' => $this->input->post('new_contact'),
 							'address' => $this->input->post('new_address'),
-							'password' =>md5($this->input->post('new_password'))
+							'password' =>md5($this->input->post('new_password')),
+							//you forgot to assign image property here
+							'photo' => $image_name
 						);
                     $this->load->model('User');
                     if($this->User->account_ins($data) == true)
