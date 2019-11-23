@@ -17,7 +17,7 @@ class Auth extends CI_Controller {
 		$this->load->model('User');
 		$data['result']=$this->User->retrive();
 
-		$this->load->view('include/navbar');
+		$this->load->view('include/navbar',$data);
 		$this->load->view('profile');
 		$this->load->view('include/footer');
 	}	
