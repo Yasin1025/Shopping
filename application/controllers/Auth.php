@@ -13,11 +13,15 @@ class Auth extends CI_Controller {
 			redirect(base_url().'main/index');
 		}
 		$data['title']='Profile';
-		$this->load->view('include/header', $data);
 		$this->load->model('User');
-		$data['result']=$this->User->retrive();
 
-		$this->load->view('include/navbar',$data);
+		// catch id from session, and put into a variable
+		$user_id = $this->session->userdata('id');
+		//pass id as a parameter on retrive function, as you only need one user's information
+		$data['result']=$this->User->retrive($user_id);
+		
+		$this->load->view('include/header', $data);
+		$this->load->view('include/navbar');
 		$this->load->view('profile');
 		$this->load->view('include/footer');
 	}	

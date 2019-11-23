@@ -5,6 +5,9 @@
 			<?php 
 				if (isset($result)) 
 				{
+					//you forgot the foreach loop
+					foreach ($result as $data) 
+					{
 
 			?>
 				<div class="col-md-6">
@@ -21,6 +24,7 @@
 				</div>
 					
 			<?php
+					}
 
 				}
 		 	?>
