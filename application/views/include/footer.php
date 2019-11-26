@@ -15,72 +15,51 @@
 
 
         <!-- **************************footer team***************************** -->
-		    <div class="team-wrapper">
-
-		    	<div class="container-fluid">
-		    		<h2 class="text-left">Our Head office</h2>
-		    		<div class="row">
-		    			<div class="col-md-4">
-		    				<!-- <ul class="list-group">
-							  <li class="list-group-item">
-							  	<a href="#">Dapibus </a>
-								</li>
-							  <li class="list-group-item">
-							 	<a href="#">Dapibus </a>
-								</li>
-							  <li class="list-group-item">
-							  	<a href="#">Dapibus </a>
-								</li>
-							  <li class="list-group-item">
-							  	<a href="#">Dapibus </a>
-								</li>
-							  <li class="list-group-item">
-							  		<a href="#">Dapibus </a>
-								</li>
-							</ul> -->
-		    				<div class="menu-name">
-		    					<ul class="menu">
-		    						<li class="f-list"><a href="#">Home</a></li>
-		    						<li class="f-list"><a href="#">Home</a></li>
-		    						<li class="f-list"><a href="#">Home</a></li>
-		    						<li class="f-list"><a href="#">Home</a></li>
-		    						<li class="f-list"><a href="#">Home</a></li>
-		    						<li class="f-list"><a href="#">Home</a></li>
-		    						<li class="f-list"><a href="#">Home</a></li>
-		    						<li class="f-list"><a href="#">Home</a></li>
-		    						<li class="f-list"><a href="#">Home</a></li>
-		    					</ul>
-		    				</div>
-		    			</div>
-		    			<div class="col-md-4">
-		    				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233987.09075513945!2d89.67229154782758!3d23.60260091801974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe3ae13ec91fa1%3A0xa6b80d7f291b41a4!2sFaridpur%20Sadar%20Upazila!5e0!3m2!1sen!2sbd!4v1574441329341!5m2!1sen!2sbd" ></iframe>
-		    			</div>
-		    			<div class="col-md-4">
-		    				<form>
-							  <div class="form-group">
-							    <label for="exampleInputEmail1">User Name:</label>
-							    <input type="text" class="form-control"  placeholder="User Name"><br /> 
-							  <div class="form-group">
-							   	<label for="exampleInputEmail1">Comments:</label>
-							 	<textarea class="form-control" rows="3"></textarea><br />
-							   </div>
-							  <button type="submit" class="btn btn-primary">Submit</button>
-							</form>
-							<div class="fonts-icon">
-								<a href="#"><span class="ti-facebook"></span></a>
-								<a href="#"><span class="ti-twitter"></span></a>
-								<a href="#"><span class="ti-google"></span></a>
-								<a href="#"><span class="ti-youtube"></span></a>
-								<a href="#"><span class="ti-email"></span></a>
-								</ul>
-							</div>
-		    			</div>
-		    		</div>
-		    	</div>
-		    </div>
-		
-
-		
+		    
+	    <div class="mt-5 pt-5 pb-5 footer">
+			<div class="container">
+			  <div class="row">
+			  	 <div class="col-lg-4 col-xs-12 links">
+			      <h4 class="mt-lg-0 mt-sm-3">Customer Care $ Information</h4>
+			        <ul class="m-0 p-0">
+			          <li>- <a href="#">Help center</a></li>
+			          <li>- <a href="#">How to buy</a></li>
+			          <li>- <a href="#">Trak your order</a></li>
+			          <li>- <a href="#">About us</a></li>
+			          <li>- <a href="#">Contuct Us</a></li>
+			          <li>- <a href="#">Our Branch</a></li>
+			        </ul>
+			    </div>
+			   
+			    <div class="col-lg-4 col-xs-12 links">
+			      <h4 class="mt-lg-0 mt-sm-3">Category List</h4>
+			        <ul class="m-0 p-0">
+			          <li>- <a href="#">Shirt</a></li>
+			          <li>- <a href="#">T-shirt</a></li>
+			          <li>- <a href="#">Shoes</a></li>
+			          <li>- <a href="#">Pant</a></li>
+			          <li>- <a href="#">Watch</a></li>
+			        </ul>
+			    </div>
+			     <div class="col-lg-4 col-xs-12 links">
+			      <h4 class="mt-lg-0 mt-sm-3">Upcomming Features</h4>
+			        <ul class="m-0 p-0">
+			          <li>- <a href="#">Different Way to login for User And Admin</a></li>
+			          <li>- <a href="#">Online Payment</a></li>
+			          <li>- <a href="#">Discount option</a></li>
+			          <li>- <a href="#">Insert In Home page</a></li>
+			          <li>- <a href="#">Attractive Alerts</a></li>
+			          <li>- <a href="#">View all Option</a></li>
+			        </ul>
+			    </div>
+			  </div>
+			  <div class="row mt-5">
+			    <div class="col copyright">
+			    	<p class=""><small class="text-white-50">->Thanks to Doyel Campus for the opportunity <br> ->And Spacially Thanks To Mahadi vai for make me a Web developer </small></p>
+			      <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
+			    </div>
+			  </div>
+			</div>
 		</div>
 	</body>
 </html>

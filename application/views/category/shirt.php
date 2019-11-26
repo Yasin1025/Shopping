@@ -2,70 +2,34 @@
  <div class="container">
  	<div class="box-7">
  		<div class="row">
-	   	    <div class="col-md-3">
-		    	<div class="card">
-					<img class="img-fluid" src="<?php echo base_url('_resources/images/2.jpg');?>">
-					<span class="ami">This is a nice shart.I love the shart.We are bye the shart click the link.<br><a href="file:///C:/Users/Ritu/Documents/abcd/form/index.html" u class="mt-13"><button type="button" class="btn btn-light col-12">BUY</button></u></span></a>
-					<p><i class="ti-tumblr-alt  mr-3"></i><span class="box-5">1250</span></p>
-					<button type="button" class="btn btn-dark a-box">USA Export</button></a>		  
+	   	  <?php 
+				if (isset($result)) 
+				{
+					foreach ($result as $data) 
+					{
+
+			?>
+			
+				<div class="col-md-3">
+    				<div class="card">
+    					
+					    <img class="img-fluid" src="<?php echo base_url('upload/').$data->productPhoto;?>" alt="">
+					    <span class="ami"><?php echo $data->productDescription;?><br>
+					    	<a href="<?php echo base_url('Buy/cart');?>" class="mt-13">
+					    		<button type="button" class="btn btn-light col-12">BUY NOW</button>
+					    	</a>
+					    </span>
+					    	
+					    <p><i class="ti-tumblr-alt  mr-3"></i><span class="box-5"><?php echo $data->productPrice;?></span></p>
+					    <button type="button" class="btn btn-dark"> Category: <?php echo $data->productCategory;?></button>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-3">
-		    	<div class="card">
-					<img class="img-fluid" src="<?php echo base_url('_resources/images/2.jpg');?>">
-					<span class="ami">This is a nice shart.I love the shart.We are bye the shart click the link.<br><a href="file:///C:/Users/Ritu/Documents/abcd/form/index.html" u class="mt-13"><button type="button" class="btn btn-light col-12">BUY</button></u></span></a>
-					<p><i class="ti-tumblr-alt  mr-3"></i><span class="box-5">1250</span></p>
-					<button type="button" class="btn btn-dark a-box">USA Export</button></a>		  
-				</div>
-			</div>
-			<div class="col-md-3">
-		    	<div class="card">
-					<img class="img-fluid" src="<?php echo base_url('_resources/images/2.jpg');?>">
-					<span class="ami">This is a nice shart.I love the shart.We are bye the shart click the link.<br><a href="file:///C:/Users/Ritu/Documents/abcd/form/index.html" u class="mt-13"><button type="button" class="btn btn-light col-12">BUY</button></u></span></a>
-					<p><i class="ti-tumblr-alt  mr-3"></i><span class="box-5">1250</span></p>
-					<button type="button" class="btn btn-dark a-box">USA Export</button></a>		  
-				</div>
-			</div>
-			<div class="col-md-3">
-		    	<div class="card">
-					<img class="img-fluid" src="<?php echo base_url('_resources/images/2.jpg');?>">
-					<span class="ami">This is a nice shart.I love the shart.We are bye the shart click the link.<br><a href="file:///C:/Users/Ritu/Documents/abcd/form/index.html" u class="mt-13"><button type="button" class="btn btn-light col-12">BUY</button></u></span></a>
-					<p><i class="ti-tumblr-alt  mr-3"></i><span class="box-5">1250</span></p>
-					<button type="button" class="btn btn-dark a-box">USA Export</button></a>		  
-				</div>
-			</div>
-			<div class="col-md-3">
-		    	<div class="card">
-					<img class="img-fluid" src="<?php echo base_url('_resources/images/2.jpg');?>">
-					<span class="ami">This is a nice shart.I love the shart.We are bye the shart click the link.<br><a href="file:///C:/Users/Ritu/Documents/abcd/form/index.html" u class="mt-13"><button type="button" class="btn btn-light col-12">BUY</button></u></span></a>
-					<p><i class="ti-tumblr-alt  mr-3"></i><span class="box-5">1250</span></p>
-					<button type="button" class="btn btn-dark a-box">USA Export</button></a>		  
-				</div>
-			</div>
-			<div class="col-md-3">
-		    	<div class="card">
-					<img class="img-fluid" src="<?php echo base_url('_resources/images/2.jpg');?>">
-					<span class="ami">This is a nice shart.I love the shart.We are bye the shart click the link.<br><a href="file:///C:/Users/Ritu/Documents/abcd/form/index.html" u class="mt-13"><button type="button" class="btn btn-light col-12">BUY</button></u></span></a>
-					<p><i class="ti-tumblr-alt  mr-3"></i><span class="box-5">1250</span></p>
-					<button type="button" class="btn btn-dark a-box">USA Export</button></a>		  
-				</div>
-			</div>
-			<div class="col-md-3">
-		    	<div class="card">
-					<img class="img-fluid" src="<?php echo base_url('_resources/images/2.jpg');?>">
-					<span class="ami">This is a nice shart.I love the shart.We are bye the shart click the link.<br><a href="file:///C:/Users/Ritu/Documents/abcd/form/index.html" u class="mt-13"><button type="button" class="btn btn-light col-12">BUY</button></u></span></a>
-					<p><i class="ti-tumblr-alt  mr-3"></i><span class="box-5">1250</span></p>
-					<button type="button" class="btn btn-dark a-box">USA Export</button></a>		  
-				</div>
-			</div>
-			<div class="col-md-3">
-		    	<div class="card">
-					<img class="img-fluid" src="<?php echo base_url('_resources/images/2.jpg');?>">
-					<span class="ami">This is a nice shart.I love the shart.We are bye the shart click the link.<br><a href="file:///C:/Users/Ritu/Documents/abcd/form/index.html" u class="mt-13"><button type="button" class="btn btn-light col-12">BUY</button></u></span></a>
-					<p><i class="ti-tumblr-alt  mr-3"></i><span class="box-5">1250</span></p>
-					<button type="button" class="btn btn-dark a-box">USA Export</button></a>		  
-				</div>
-			</div>
+
+			<?php
+
+					}
+				}
+			 ?>
  	    </div>
     </div>
 </div>

@@ -8,10 +8,7 @@ class Main extends CI_Controller {
 	 */
 	public function index()
 	{	
-		// if ($this->session->userdata('logged_in')!='') 
-		// {
-		// 	redirect(base_url().'Main/index');
-		// }
+		
 		$data['title']='Online Store';
 		$data['success']= $this->session->flashdata('success');
 		$data['error']= $this->session->flashdata('error');
@@ -82,6 +79,7 @@ class Main extends CI_Controller {
 
 	public function nav_signup_validation()
 	{
+
 		$this->form_validation->set_rules('new_username', 'username', 'required');
 		$this->form_validation->set_rules('new_email', 'email', 'required');
 		$this->form_validation->set_rules('new_password', 'password', 'required');
@@ -100,7 +98,7 @@ class Main extends CI_Controller {
                 $image_name = 'image-'.time().'.'.pathinfo($path, PATHINFO_EXTENSION); 
                 $config['upload_path']          = './upload/';
                 $config['allowed_types']        = 'gif|jpg|jpeg|png';
-                $config['max_size']             = 1024;
+                $config['max_size']             = 2048;
                 $config['max_width']            = 1600;
                 $config['max_height']           = 1200;
                 $config['file_name']            = $image_name;  
@@ -126,13 +124,15 @@ class Main extends CI_Controller {
                     $this->load->model('User');
                     if($this->User->account_ins($data) == true)
                     {
+
                         $this->session->set_flashdata('success', 'Account Created'); 
                         $this->index();
+                        
                     }
                     else 
                     {
                         $this->session->set_flashdata('error', '!please try again'); 
-                        redirect('main/nav_signin_validation');
+                        redirect('main/nav_signup_validation');
                     }
                 }
             }
@@ -143,4 +143,8 @@ class Main extends CI_Controller {
             }   
         }		
 	}
+
+
+	
+	
 }
